@@ -11,7 +11,7 @@ Reading the contents of a file into memory is a very common programming task, an
 
 So if we wanted to read `/etc/hosts` and print it to stdout (just like UNIX `cat`):
 
-    fs = require('fs')
+    fs = require('fs');
     fs.readFile('/etc/hosts', 'utf8', function (err,data) {
       if (err) {
         return console.log(err);
